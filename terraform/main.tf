@@ -1,4 +1,4 @@
-ressource "aws_s3_bucket" "mybycket"{
+resource "aws_s3_bucket" "mybycket"{
 	bucket = "testterraformawsconnectionbucket"
 
 }
