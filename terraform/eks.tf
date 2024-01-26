@@ -56,28 +56,17 @@ module "eks" {
   # aws-auth configmap
   manage_aws_auth_configmap = false
 
-  aws_auth_roles = [
-    {
-      rolearn  = "arn:aws:iam::594182463744:role/role1"
-      username = "role1"
-      groups   = ["system:masters"]
-    },
-  ]
 
   aws_auth_users = [
     {
-      userarn  = "arn:aws:iam::594182463744:user/user1"
-      username = "user1"
-      groups   = ["system:masters"]
-    },
-    {
-      userarn  = "arn:aws:iam::594182463744:user/user2"
-      username = "user2"
-      groups   = ["system:masters"]
+      userarn  = "arn:aws:iam::654654632703:user/chaimae"
+      username = "chaimae"
+      groups   = "terraform"
     },
   ]
 
   aws_auth_accounts = [
+    "654654632703"
     "594182463744",
     "888888888888",
   ]
